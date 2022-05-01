@@ -8,7 +8,7 @@ int main()
         d=n%10;
         n=n/10;
         res+=d*d;
-        if(n==0&&res>9)
+        if(n==0 && res>9)
         {
             n=res;
             res=0;
@@ -22,5 +22,4 @@ int main()
     {
         printf("False");
     }
-    return 0;
 }
