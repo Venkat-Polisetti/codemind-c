@@ -1,21 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,x=0;
+    int n,i,c=0;
     scanf("%d",&n);
-    for(i=0;i<n;i++)
+    for(i=1;i<=n;i++)
     {
         if(i*(i+1)==n)
         {
-            x=1;
+            printf("YES");
+            c++;
             break;
         }
     }
-    if(x==1)
-    {
-        printf("YES");
-    }
-    else
+    if(c==0)
     {
         printf("NO");
     }
