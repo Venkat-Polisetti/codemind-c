@@ -1,5 +1,5 @@
 #include<stdio.h>
-int isitprime(int x)
+int isprime(int x)
 {
     int j,fc=0;
     for(j=1;j<=x;j++)
@@ -9,28 +9,28 @@ int isitprime(int x)
             fc++;
         }
     }
-        if(fc==2)
-        {
-            return 0;
-        }
-        else
-        {
-            return 1;
-        }
+    if(fc==2)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
 }
 int main()
 {
-    int n,i,res=0;
+    int n,i,c=0;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
         if(n%i==0)
         {
-            if(isitprime(i))
+            if(isprime(i))
             {
-                res++;
+                c++;
             }
         }
     }
-    printf("%d",res);
+    printf("%d",c);
 }
