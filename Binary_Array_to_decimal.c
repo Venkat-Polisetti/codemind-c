@@ -2,20 +2,20 @@
 #include<math.h>
 int main()
 {
-    int n,i,arr[100],s=0,a;
+    int n,a[100],i,sum=0,x;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%d",&a[i]);
     }
-    a=n;
+    x=n;
     for(i=0;i<n;i++)
     {
-        if(arr[i]==1)
+        if(a[i]==1)
         {
-            s=s+pow(2,a-1);
+            sum=sum+pow(2,x-1);
         }
-        a--;
+        x--;
     }
-    printf("%d",s);
+    printf("%d",sum);
 }
