@@ -2,30 +2,31 @@
 #include<math.h>
 int main()
 {
-    int n,d,temp=0,c=0,a,sqrt=0,e,k=0;
+    int n,d,sq=0,rev=0,temp=0,temp1=0,c=0,d1,k=0,p;
     scanf("%d",&n);
     temp=n;
-    sqrt=n*n;
+    sq=n*n;
+    temp1=0;
     while(n)
     {
         d=n%10;
         c++;
         n=n/10;
     }
-    while(sqrt)
+    while(sq)
     {
-        a=pow(10,c);
-        e=sqrt%a;
-        if(e==temp)
+        p=pow(10,c);
+        d1=sq%p;
+        if(d1==temp)
         {
-           printf("Automorphic Number");
-           k++;
-           break;
+            printf("Automorphic Number");
+            k++;
+            break;
         }
-        sqrt=sqrt/10;
+        sq=sq/10;
     }
     if(k==0)
-        {
-            printf("Not an Automorphic Number");
-        }
+    {
+        printf("Not an Automorphic Number");
+    }
 }
