@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int n,x=0;
+    int n,d,x=0;
     scanf("%d",&n);
     while(n!=1)
     {
         if(n%2==0)
         {
-            n/=2;
+            n=n/2;
         }
         else if(n%3==0)
         {
@@ -19,9 +19,9 @@ int main()
         }
         else
         {
-            printf("Not Ugly Number");
-            x=1;
-            break;
+          printf("Not Ugly Number");
+          x=1;
+          break;
         }
     }
     if(x==0)
