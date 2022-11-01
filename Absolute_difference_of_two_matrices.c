@@ -23,7 +23,7 @@ int main()
         for(j=0;j<n;j++)
         {
         printf("%d",abs(b[i][j]-a[i][j]));
-        if(j<n-1)
+         if(j<n-1)
         {
             printf(" ");
         }
